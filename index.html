@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Animations Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Animation & Preferences Demo</h1>
+        
+        <div class="preferences-panel">
+            <h2>User Preferences</h2>
+            <div class="form-group">
+                <label for="theme">Theme:</label>
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="animation-speed">Animation Speed:</label>
+                <select id="animation-speed">
+                    <option value="slow">Slow</option>
+                    <option value="normal">Normal</option>
+                    <option value="fast">Fast</option>
+                </select>
+            </div>
+            <button id="save-btn" class="btn pulse">Save Preferences</button>
+        </div>
+
+        <div class="animation-box">
+            <div class="animated-element" id="target-element">
+                Click me!
+            </div>
+            <button id="animate-btn" class="btn bounce">Trigger Animation</button>
+            <button id="reset-btn" class="btn">Reset</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
